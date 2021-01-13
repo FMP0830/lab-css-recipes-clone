@@ -1,9 +1,107 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
-  margin: 0;
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
-/*Import the font and set the default size*/
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+
+.header {
+  width: 100%;
+  height: 100vh;
+}
+
+.header-img {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.header-text {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-p {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1.2rem;
+}
+
+.ingredients {
+  height: 85vh;
+  position: relative
+}
+
+.ingredients-img img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 3px solid #eee;
+  margin-top: 30px;
+}
+
+.ingredients-text h2 {
+  margin-top: 85px;
+  margin-left: 20%
+}
+
+.ingredients-text ul {
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 150%;
+  list-style-type: none;
+}
+
+.instructions {
+  height: 85vh;
+  position: relative
+}
+
+.instructions-img img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 3px solid #eee;
+  margin-top: 30px;
+}
+
+.instructions-text h2 {
+  margin-top: 110px;
+  margin-left: 20%
+}
+
+.instructions-text ul {
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 150%;
+  list-style-type: none;
 }
